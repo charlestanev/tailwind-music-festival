@@ -38,50 +38,39 @@
           carousel.scrollLeft = carousel.scrollLeft + itemWidth;
         })
 
-
-
-
-
-
       };
-
-
-
-
-
-
 
     </script>
   </head>
 
   <body>
-    <main>
+    <main class="bg-zinc-200 dark:bg-zinc-900">
       <header class="text-zinc-50">
         <nav
           class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500 z-[1]"
         >
-          <div class="flex items-center p-2 gap-2">
+          <div class="flex items-center gap-2 p-2">
             <img
               src="./assets/images/logo-inverted.png"
               alt="logo"
               srcset=""
               width="50"
             />
-            <div class="font-bold text-2xl">
+            <div class="text-2xl font-bold">
               tw:<span class="text-sky-900">mf</span>
             </div>
           </div>
 
-          <div class="block md:hidden my-auto ml-auto cursor-pointer pr-4">
+          <div class="block pr-4 my-auto ml-auto cursor-pointer md:hidden">
             <div id="mobile-menu-button" class="group peer">
               <div
-                class="top-0 bg-zinc-200 rounded-full w-8 h-1 group-open:rotate-45 transition-all group-open:top-2 relative"
+                class="relative top-0 w-8 h-1 transition-all rounded-full bg-zinc-200 group-open:rotate-45 group-open:top-2"
               ></div>
               <div
-                class="bg-zinc-200 rounded-full w-8 h-1 mt-1 opacity-100 group-open:opacity-0 transition-all"
+                class="w-8 h-1 mt-1 transition-all rounded-full opacity-100 bg-zinc-200 group-open:opacity-0"
               ></div>
               <div
-                class="top-0 bg-zinc-200 rounded-full w-8 h-1 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"
+                class="relative top-0 w-8 h-1 mt-1 transition-all rounded-full bg-zinc-200 group-open:-rotate-45 group-open:-top-2"
               ></div>
             </div>
 
@@ -89,43 +78,43 @@
               class="absolute top-[62px] bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0 hidden peer-open:block"
             >
               <div
-                class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10"
+                class="relative flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer hover:text-zinc-200 hover:bg-white/10"
               >
                 <span class="test">Home</span>
               </div>
               <div
-                class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10"
+                class="relative flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer hover:text-zinc-200 hover:bg-white/10"
               >
                 <span class="test">Lineup</span>
               </div>
               <div
                 id="ticket-menu-item"
-                class="group relative h-full cursor-pointer text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10"
+                class="relative h-full text-pink-200 transition-colors cursor-pointer group hover:text-zinc-200 hover:bg-white/10"
               >
-                <div class="p-4 text-center font-bold">Tickets</div>
+                <div class="p-4 font-bold text-center">Tickets</div>
 
                 <div class="hidden group-open:block">
                   <div
-                    class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out"
+                    class="relative p-4 text-center text-pink-200 transition-colors ease-in-out hover:text-zinc-200 hover:bg-white/5"
                   >
                     <span class="test">Single tickets</span>
                   </div>
                   <div
-                    class="text-center p-4 relative text-pink-200 hover:text-zinc-200 hover:bg-white/5 transition-colors ease-in-out"
+                    class="relative p-4 text-center text-pink-200 transition-colors ease-in-out hover:text-zinc-200 hover:bg-white/5"
                   >
                     <span class="test">7 day ticket</span>
                   </div>
                 </div>
               </div>
               <div
-                class="relative flex h-full cursor-pointer items-center justify-center p-4 font-bold text-pink-200 hover:text-zinc-200 transition-colors hover:bg-white/10"
+                class="relative flex items-center justify-center h-full p-4 font-bold text-pink-200 transition-colors cursor-pointer hover:text-zinc-200 hover:bg-white/10"
               >
                 <span class="test">Support</span>
               </div>
             </div>
           </div>
 
-          <div class="md:flex hidden flex-1 items-center justify-end">
+          <div class="items-center justify-end flex-1 hidden md:flex">
             <div class="menu-item">
               <span>Home</span>
             </div>
@@ -137,15 +126,15 @@
             <div class="menu-item group">
               <span>Tickets</span>
               <div
-                class="hidden absolute top-full right-0 whitespace-nowrap bg-pink-500 rounded-b-md text-left group-hover:block"
+                class="absolute right-0 hidden text-left bg-pink-500 top-full whitespace-nowrap rounded-b-md group-hover:block"
               >
                 <div
-                  class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200"
+                  class="p-4 font-bold text-pink-200 transition-colors ease-in-out cursor-pointer hover:bg-white/5 hover:text-zinc-200"
                 >
                   <span class="test"> Single day ticket </span>
                 </div>
                 <div
-                  class="p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200"
+                  class="p-4 font-bold text-pink-200 transition-colors ease-in-out cursor-pointer hover:bg-white/5 hover:text-zinc-200"
                 >
                   <span class="test"> 7 day ticket </span>
                 </div>
@@ -162,26 +151,26 @@
           class="flex h-[calc(100vh-200px)] min-h-[400px] flex-col items-center justify-center"
         >
           <div
-            class="rounded-xl bg-white/30 py-2 px-4 text-center backdrop-blur-md"
+            class="px-4 py-2 text-center rounded-xl bg-white/30 backdrop-blur-md"
           >
             <div class="relative">
               <img src="./assets/images/logo.png" alt="" width="175" />
 
               <div class="items-center flex justify-center mt-[-70px] mb-5">
                 <div
-                  class="h-14 w-14 bg-pink-500 rounded-full animate-wavey flex items-center justify-center gap-1"
+                  class="flex items-center justify-center gap-1 bg-pink-500 rounded-full h-14 w-14 animate-wavey"
                 >
                   <div
-                    class="h-2 w-1 bg-pink-300 rounded-full animate-wavey"
+                    class="w-1 h-2 bg-pink-300 rounded-full animate-wavey"
                   ></div>
                   <div
-                    class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-200"
+                    class="w-1 h-3 bg-pink-200 rounded-full animate-wavey animation-delay-200"
                   ></div>
                   <div
                     class="h-4 w-1 bg-pink-100 rounded-full animate-wavey animation-delay-[150ms]"
                   ></div>
                   <div
-                    class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-300"
+                    class="w-1 h-3 bg-pink-200 rounded-full animate-wavey animation-delay-300"
                   ></div>
                   <div
                     class="h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[75ms]"
@@ -196,18 +185,18 @@
           <div class="mt-3 text-sm font-bold">
             Keep me updated with news and promotions
           </div>
-          <form class="mt-3 flex gap-2">
+          <form class="flex gap-2 mt-3">
             <input
               type="email"
               name=""
               id=""
               placeholder="Email"
-              class="rounded-sm vorder-white/40 bg-white/30 backdrop-blur-md p-2 font-bold text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 focus:outline"
+              class="p-2 font-bold rounded-sm vorder-white/40 bg-white/30 backdrop-blur-md text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 focus:outline"
             />
 
             <button
               type="submit"
-              class="cursor-pointer uppercase rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20"
+              class="px-4 py-2 font-bold uppercase transition-colors bg-pink-500 rounded-sm cursor-pointer hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20"
             >
               subscribe
             </button>
@@ -215,7 +204,7 @@
         </div>
       </header>
 
-      <div class="max-w-screen-lg mx-auto mt-20">
+      <div class="max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
         <h2 class="capitalize">headliners</h2>
         <p class="tes">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum
@@ -224,19 +213,19 @@
         </p>
 
         <div class="flex">
-          <div id="previous" class="text-5xl flex justify-center items-center cursor-pointer p-2 relative -top-8 ">
+          <div id="previous" class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8 ">
             <i class="fas fa-angle-left"></i>
           </div>
 
           <div class="test1">
             <div
               id="carousel"
-              class="scroll-smoth felx-1 mt-4 flex w-full gap-4 pb-5 snap-x overflow-x-auto"
+              class="flex w-full gap-4 pb-5 mt-4 overflow-x-auto scroll-smoth felx-1 snap-x"
             >
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band1.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Liam Rivers</h5>
                 <h6>10th June 8pm - Main Stage</h6>
@@ -245,7 +234,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band2.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Ethan Brooks</h5>
                 <h6>11th June 8pm - Main Stage</h6>
@@ -254,7 +243,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band3.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Oliver Clarke</h5>
                 <h6>12th June 8pm - Main Stage</h6>
@@ -263,7 +252,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band4.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Lucas Morgan</h5>
                 <h6>13th June 8pm - Main Stage</h6>
@@ -272,7 +261,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band5.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Jackson Patel</h5>
                 <h6>14th June 8pm - Main Stage</h6>
@@ -281,7 +270,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band6.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Noah Ramirez</h5>
                 <h6>15th June 8pm - Main Stage</h6>
@@ -290,7 +279,7 @@
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band7.jpg')"
-                  class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/80"
+                  class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Sebastian Hayes</h5>
                 <h6>16th June 8pm - Main Stage</h6>
@@ -298,7 +287,7 @@
             </div>
           </div>
        
-          <div id="next" class="text-5xl flex justify-center items-center cursor-pointer p-2 relative -top-8 ">
+          <div id="next" class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8 ">
             <i class="fas fa-angle-right"></i>
           </div>
 
