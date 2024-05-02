@@ -32,11 +32,11 @@
         previousButton.addEventListener("click", () => {
           const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
           carousel.scrollLeft = carousel.scrollLeft - itemWidth;
-        })
+        });
         nextButton.addEventListener("click", () => {
           const itemWidth = carousel.getElementsByTagName("div")[0].clientWidth;
           carousel.scrollLeft = carousel.scrollLeft + itemWidth;
-        })
+        });
 
         const darkModeToggle = document.getElementById("dark-mode-toggle");
         darkModeToggle.addEventListener("click", () => {
@@ -47,18 +47,19 @@
           }
         });
       };
-
     </script>
   </head>
 
   <body class="dark">
     <main class="bg-zinc-200 dark:bg-zinc-900">
       <header class="text-zinc-50">
-        
-      <div id="dark-mode-toggle" class="fixed right-0 inline-block w-12 p-2 text-3xl rounded-l-lg cursor-pointer top-24 bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900">
-        <i class="fa-solid fa-sun dark:hidden"></i>
-        <i class="hidden fa-solid fa-moon dark:inline"></i>
-      </div>
+        <div
+          id="dark-mode-toggle"
+          class="fixed right-0 z-10 inline-block w-12 p-2 text-3xl rounded-l-lg cursor-pointer top-24 bg-zinc-900 dark:bg-zinc-200 text-zinc-200 dark:text-zinc-900"
+        >
+          <i class="fa-solid fa-sun dark:hidden"></i>
+          <i class="hidden fa-solid fa-moon dark:inline"></i>
+        </div>
 
         <nav
           class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500 z-[1]"
@@ -218,7 +219,9 @@
         </div>
       </header>
 
-      <div class="max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text-zinc-200">
+      <div
+        class="max-w-screen-lg mx-auto mt-20 text-zinc-900 dark:text-zinc-200"
+      >
         <h2 class="capitalize">headliners</h2>
         <p class="tes">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum
@@ -226,13 +229,17 @@
           commodi eveniet?
         </p>
         <div class="flex">
-          <div id="previous" class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8 ">
+          <div
+            id="previous"
+            class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8"
+          >
             <i class="fas fa-angle-left"></i>
           </div>
           <div class="test1">
             <div
               id="carousel"
-              class="flex w-full gap-4 pb-5 mt-4 overflow-x-auto scroll-smoth felx-1 snap-x">
+              class="flex w-full gap-4 pb-5 mt-4 overflow-x-auto scroll-smoth felx-1 snap-x"
+            >
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
                   style="background-image: url('./assets/images/band1.jpg')"
@@ -247,7 +254,7 @@
                   class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
                 <h5 class="mt-2">Ethan Brooks</h5>
-                <h6>11th June 8pm - Main Stage</h6>
+                <h6>10th June 10pm - Main Stage</h6>
               </div>
               <div class="min-w-[80%] md:min-w-[40%]">
                 <div
@@ -286,36 +293,97 @@
                   style="background-image: url('./assets/images/band7.jpg')"
                   class="w-full bg-center bg-cover shadow-md h-80 snap-center rounded-xl shadow-black/80"
                 ></div>
-                <h5 class="mt-2">Sebastian Hayes</h5>
+                <h5 class="mt-2 capitalize">sebastian Hayes</h5>
                 <h6>16th June 8pm - Main Stage</h6>
               </div>
             </div>
           </div>
-          <div id="next" class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8 ">
+          <div
+            id="next"
+            class="relative flex items-center justify-center p-2 text-5xl cursor-pointer -top-8"
+          >
             <i class="fas fa-angle-right"></i>
           </div>
+        </div>
 
+        <h2 class="mt-20 capitalize">lineup</h2>
+        <p class="capitalize">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+          accusamus! Ea odit laborum accusantium modi et iusto ipsa! Est,
+          nostrum.
+        </p>
+        <div class="relative px-6 py-4 mt-5 rounded-lg bg-zinc-800 text-zinc-200">
+          <div class="absolute top-0 left-1/2 w-4 -ml-[-8px] h-full rounded-full bg-gradient-to-b from-sky-900 via-cyan-900 to-teal-900">
+              
+            <div class="sticky top-1/2">
+              <div class="w-4 h-4 realative">
+                <div class="absolute w-4 h-4 bg-pink-500 rounded-full opacity-75 animate-ping"></div>
+                <div class="relative w-4 h-4 rounded-full bg-rose-500"></div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="grid grid-cols-2 gap-8">
+            <div>
+              <h4 class="p-2 my-2 rounded-lg bg-zinc-900">10th june</h4>
+            </div>
+            <div></div>
+            <div class="text-right">
+              <div class="font-bold capitalize">liam rivers</div>
+              <div class="capitalize text-zinc-400">8pm main stage</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="ml-7">
+              <div class="font-bold capitalize">Ethan brooks</div>
+              <div class="capitalize text-zinc-400">10pm main stage</div>
+            </div>
+
+            <div>
+              <h4 class="p-2 my-2 rounded-lg bg-zinc-900">12th june</h4>
+            </div>
+            <div></div>
+            <div class="text-right">
+              <div class="font-bold capitalize">oliver Clarke</div>
+              <div class="capitalize text-zinc-400">8pm main stage</div>
+            </div>
+            <div></div>
+            <div></div>
+            <div class="ml-7">
+              <div class="font-bold capitalize">lucas Morgan</div>
+              <div class="capitalize text-zinc-400">10pm main stage</div>
+            </div>
+
+          </div>
         </div>
 
         <h2 class="mt-20 capitalize">tickets</h2>
         <table class="table w-full mt-5 border border-collapse border-zinc-500">
           <thead class="text-lg font-bold">
-            <td class="p-3 capitalize border border-zinc-500">Tickets</td>
-            <td class="p-3 capitalize border border-zinc-500">Price</td>
+            <td class="p-3 capitalize border border-zinc-500">tickets</td>
+            <td class="p-3 capitalize border border-zinc-500">price</td>
           </thead>
           <tbody class="">
             <tr>
-              <td class="px-3 py-2 capitalize border border-zinc-500">single day ticket</td>
+              <td class="px-3 py-2 capitalize border border-zinc-500">
+                single day ticket
+              </td>
               <td class="px-3 py-2 capitalize border border-zinc-500">$30</td>
             </tr>
             <tr>
-              <td class="px-3 py-2 capitalize border border-zinc-500">7 dayticket</td>
+              <td class="px-3 py-2 capitalize border border-zinc-500">
+                7 dayticket
+              </td>
               <td class="px-3 py-2 capitalize border border-zinc-500">$100</td>
             </tr>
           </tbody>
-          <caption class="capitalize caption-bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, culpa.</caption>
+          <caption class="capitalize caption-bottom">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
+            culpa.
+          </caption>
         </table>
-
       </div>
     </main>
   </body>

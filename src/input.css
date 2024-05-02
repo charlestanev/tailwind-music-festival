@@ -9,22 +9,22 @@
         font-family: "Quicksand", sans-serif;
     }
     h1{
-        @apply text-6xl font-bold;
+        @apply text-6xl font-bold capitalize;
     }
     h2{
-        @apply text-5xl font-bold;
+        @apply text-5xl font-bold capitalize;
     }
     h3{
-        @apply text-4xl font-bold;
+        @apply text-4xl font-bold capitalize;
     }
     h4{
-        @apply text-3xl font-bold;
+        @apply text-3xl font-bold capitalize;
     }
     h5{
-        @apply text-2xl font-bold;
+        @apply text-2xl font-bold capitalize;
     }
     h6{
-        @apply text-xl font-bold;
+        @apply text-xl font-bold capitalize;
     }
 }
 
